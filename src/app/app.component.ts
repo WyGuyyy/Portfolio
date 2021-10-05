@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-site';
+
+  menuItemClick(showId: string){
+    var element = document.getElementById(showId);
+    
+    if(element){
+      if(element.classList.contains("show")){
+        element.classList.remove("show");
+      }else{
+        element.classList.add("show");
+      }
+    }
+  }
 }
