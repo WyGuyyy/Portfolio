@@ -6,6 +6,7 @@ html{
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(39, 39, 39));
     /*background: rgba(0, 0, 0, 1);*/
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{

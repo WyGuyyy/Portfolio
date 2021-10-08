@@ -1,4 +1,4 @@
-.header-container{
+/*.header-container{
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,18 +7,21 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-}
+}*/
 
 .header-hamburger-wrapper{
-    height: 30px;
+    position: fixed;
+    top: 15px;
+    right: 20px;
     width: 30px;
+    height: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     cursor: pointer;
-    z-index: 1;
+    z-index: 4;
 }
 
 .header-hamburger-wrapper:hover>div{

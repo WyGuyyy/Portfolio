@@ -1,6 +1,6 @@
 .menu-container{
     position: fixed;
-    right: 0px;
+    right: -300px;
     height: 100%;
     width: 300px;
     background: rgba(27, 27, 27, 0.9);
@@ -8,7 +8,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    display: none;
+    transition-duration: 1s;
+    z-index: 3;
 }
 
 .menu-wrapper{
@@ -85,8 +86,14 @@ ul ul li a{
 
 ul ul li ul li a{
     font-size: 17px;
-    color: white;
+    color: rgb(128, 246, 255);
     padding-left: 80px;
+}
+
+ul ul li ul li a:hover{
+    color: rgb(0, 187, 201);
+    background: rgba(77, 77, 77, 0.9);
+    border-left-color: rgb(0, 187, 201);
 }
 
 ul ul li a:hover{
