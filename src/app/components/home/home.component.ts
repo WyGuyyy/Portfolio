@@ -51,9 +51,9 @@ state:string = "appoff";
     this.cdr.detectChanges();
   }
 
-  menuItemClick(showId:string){
+  /*menuItemClick(showId:string){
     var listToShow = document.getElementsByClassName(showId)[0];
     listToShow?.classList.toggle(showId);
-  }
+  }*/
 
 }

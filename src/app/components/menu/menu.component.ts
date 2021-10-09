@@ -1,4 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,15 +8,27 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-@Output() menuItemClick: EventEmitter<string> = new EventEmitter();
+//@Output() menuItemClick: EventEmitter<string> = new EventEmitter();
 
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
+
   }
 
-  onMenuItemClick(showId:string){ //Start here next time, something not working with onMenuItemClick
-    this.menuItemClick.emit(showId);
+  onMenuItemClick(id:string){ //Start here next time, something not working with onMenuItemClick
+
+    var element = document.getElementById(id);
+    
+    if(element){
+      if(element.classList.contains("show")){
+        element.classList.remove("show");
+      }else{
+        element.classList.add("show");
+      }
+    }
+
+    this.projectService.setProject(id);
   }
 
 }

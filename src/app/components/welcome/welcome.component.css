@@ -68,11 +68,13 @@
     color: white;
     font-size: 30px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .welcome-job-title{
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 .welcome-social-media-wrapper{
@@ -161,4 +163,42 @@
 .welcome-message{
     color: white;
     text-align: center;
+}
+
+@media(max-width: 650px){
+    .welcome-social-media-wrapper{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template: 
+        'li tw'
+        'bb yt'
+        'ig fb';
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-linkedin{
+        grid-area: li;
+    }
+
+    .welcome-twitter{
+        grid-area: tw;
+    }
+
+    .welcome-bitbucket{
+        grid-area: bb;
+    }
+
+    .welcome-youtube{
+        grid-area: yt;
+    }
+
+    .welcome-instagram{
+        grid-area: ig;
+    }
+
+    .welcome-facebook{
+        grid-area: fb;
+    }
 }

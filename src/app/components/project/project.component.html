@@ -4,11 +4,12 @@
             <h2 class="project-title">Projects</h2>
         </div>
         <div class="project-display-area">
-            <div class="project-display-image-wrapper" [@hideProject]='state' [@showProject]='state' (@hideProject.done)="hideProject()">
-                <img class="project-display-image"/>
+            <div class="project-display-image-wrapper" [@hideProject]='state' [@showProject]='state' (@hideProject.done)="showProject()">
+                <div id="project-display-image" class="project-display-image" [ngStyle]="{'background':imagePath}"></div>
             </div>
             <div class="project-display-description-wrapper" [@hideProject]='state' [@showProject]='state'>
-                <h2 id="test" class="project-display-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+                <h1 id="project-display-description-title" class="project-display-description-title">{{title}}</h1>
+                <h2 id="project-display-description" class="project-display-description">{{description}}</h2>
             </div>
         </div>
     </div>

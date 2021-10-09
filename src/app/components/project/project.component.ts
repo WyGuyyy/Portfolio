@@ -1,5 +1,9 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, Input, OnDestroy } from '@angular/core';
 import { animate, state, transition, trigger, style, keyframes } from '@angular/animations';
+import {Project} from '../../Project';
+import {PROJECTS} from '../../project-data';
+import { ProjectService } from 'src/app/services/project.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-project',
@@ -26,27 +30,60 @@ import { animate, state, transition, trigger, style, keyframes } from '@angular/
     ])
   ]
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit, OnDestroy {
+
+  subscriptions = new Subscription();
 
   state:string = "";
 
-  constructor(private cdr: ChangeDetectorRef) { }
+  title:string = "Select a Project";
+  description:string = "Click on a project from the menu to be displayed!";
+  imagePath:string = "url(../../assets/img/" + (window.innerWidth <= 800 ? "Default_Wide,jpg" : "Default_Tall.jpg") + ")";
+
+  project:Project = {
+    id: "",
+    title: "",
+    description: "",
+    tall_image: "",
+    wide_image: ""
+  };
+
+  constructor(private cdr: ChangeDetectorRef, private projectService: ProjectService) { }
 
   ngOnInit(): void {
+
+    this.subscriptions.add(this.projectService.projectChanged$
+      .subscribe(project => {
+
+        if(!(project.id === this.project.id) || this.project.id === ""){
+          this.project = project;
+          
+          if(this.project.id !== ""){
+            this.state = "refresh";
+          }
+
+        }
+      }))
   }
 
-  ngAfterViewInit(){
-    this.state = "refresh";
-    this.cdr.detectChanges();
+  ngOnDestroy(){
+    this.subscriptions.unsubscribe();
   }
 
-  hideProject(){
-
-    var element = document.getElementById("test");
-
-    if(element){
-    element.textContent = "this is new";
+  showProject(){
+    
+    if(this.state === ""){
+      return;
     }
+
+    /*var description = document.getElementById("project-display-description");
+    var image = document.getElementById("project-display-image");*/
+
+    var imageName = (window.innerWidth <= 800 ? this.project.wide_image : this.project.tall_image);
+
+    this.title = this.project.title;
+    this.description = this.project.description;
+    this.imagePath = "url(../../assets/img/" + imageName + ")";
 
     this.state = "refresh2";
 
