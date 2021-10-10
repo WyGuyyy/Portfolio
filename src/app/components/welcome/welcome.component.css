@@ -28,15 +28,20 @@
 }
 
 .welcome-avi-pane::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
   } 
 
   .welcome-avi-pane::-webkit-scrollbar-thumb{
-    display: none;
+    background-color: rgba(0, 102, 109, 0.7);
+    border-radius: 10px;
 }
   
 .welcome-avi-pane::-webkit-scrollbar-track {
-    display: none;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
 }
 
 .welcome-avi-pane-content{

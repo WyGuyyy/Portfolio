@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     {
         id: "menu-FreezeTrack",
         title: "FreezeTrack",
-        description: `FreezeTrack was a little side project I wrote so I could get some native mobile
+        description: `FreezeTrack was a little side project I wrote for Android in Java/xml so I could get some native mobile
                       development under my belt. The app enables users to keep track of the dates in which
                       they bought and stored food, and the expiration date of those foods so that consumption can be
                       planned accordingly. My favorite part about this project is that I was able to play around
@@ -77,6 +77,16 @@ export const PROJECTS: Project[] = [
                       than my custom capture session). This app sits on top of a SQLite database for data persistence. (Click on the image for more details).` ,
         tall_image: "FreezeTrack_Tall.PNG",
         wide_image: "FreezeTrack_Wide.PNG"
+    },
+    {
+        id: "menu-Ahem",
+        title: "Ahem",
+        description: `Ahem is a native Android application that I developed to get some experience with the Google Maps API and Android's more recent Room Database
+                      Architecture for data flow between the database, the controller, and the view of the application. Anyone that worked with data persistence on Android
+                      from the the middle of the 20-teen years knows that data persistence with SQLite used to have to be handled by interacting directly with the SQLite database via SQLiteOpenHelper.
+                      The Room Database Architecture simplifies this by acting as a layer on top of the SQLite. The entirety of this architecture is a little too much to discuss here (Click on the image for more details).` ,
+        tall_image: "Ahem_Tall.PNG",
+        wide_image: "Ahem_Wide.PNG"
     },
     {
         id: "menu-Fit4Life-Fullstack",
