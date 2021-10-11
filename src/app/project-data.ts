@@ -11,7 +11,8 @@ export const PROJECTS: Project[] = [
                       This is a fullstack application with a complete account/login system for security 
                       (more on the architecture under FullStack section in the menu).` ,
         tall_image: "Fit4Life_Tall.PNG",
-        wide_image: "Fit4Life_Wide.PNG"
+        wide_image: "Fit4Life_Wide.PNG",
+        link: ""
     },
     {
         id: "menu-MidMichiganSeconds",
@@ -25,7 +26,8 @@ export const PROJECTS: Project[] = [
                       when customers purchase seconds of the day. The app uses a Java Spring API to send requests
                       to a backend MySQL server. This is a fullstack application (more on the architecture under FullStack section in the menu).` ,
         tall_image: "MidMichiganSeconds_Tall.PNG",
-        wide_image: "MidMichiganSeconds_Wide.PNG"
+        wide_image: "MidMichiganSeconds_Wide.PNG",
+        link: "https://youtu.be/j94QXj6LU9E"
     },
     {
         id: "menu-PortfolioSite",
@@ -38,7 +40,8 @@ export const PROJECTS: Project[] = [
                       libraries to explore, so I decided to dive into Angular. This site does not connect to a backend, but connects to a mock
                       observable service that stores all of my project data.` ,
         tall_image: "Portfolio_Tall.PNG",
-        wide_image: "Portfolio_Wide.PNG"
+        wide_image: "Portfolio_Wide.PNG",
+        link: ""
     },
     {
         id: "menu-Fit4LifeAPI",
@@ -49,10 +52,10 @@ export const PROJECTS: Project[] = [
                       to specific facets of the system, but I wanted to take that a step further and be in total
                       control of the whole thing - every part of the system down to the authentication package. So
                       I did just that and wrote an entire API service with over 13 different interfaces interacting with
-                      a MySQL database, and wrote a basic autentication system using the Spring framework. 
-                      (Click on the image for more details).` ,
+                      a MySQL database, and wrote a basic autentication system using the Spring framework.` ,
         tall_image: "Default_Tall.jpg",
-        wide_image: "Default_Wide.jpg"
+        wide_image: "Default_Wide.jpg",
+        link: ""
     },
     {
         id: "menu-MidMichiganSecondsAPI",
@@ -61,9 +64,10 @@ export const PROJECTS: Project[] = [
                       and the backend MySQL server. This service handles everything from tracking customer images aligned
                       to certain seconds of the day for the carousel slideshow, to managing payments and transactions made by customers.
                       The services' transaction module connects to the PayPal Billing and Payment API so that secure and accurate payments can be ensured
-                      by a trusted and well known third party. (Click on the image for more details).` ,
+                      by a trusted and well known third party.` ,
         tall_image: "Default_Tall.jpg",
-        wide_image: "Default_Wide.jpg"
+        wide_image: "Default_Wide.jpg",
+        link: ""
     },
     {
         id: "menu-FreezeTrack",
@@ -74,9 +78,10 @@ export const PROJECTS: Project[] = [
                       planned accordingly. My favorite part about this project is that I was able to play around
                       with the camera API of the device, setting up a Camera Capture Session and manually supplying the session with a surface texture
                       and capture settings (although I ultimately just used Android's baked in ACTION_IMAGE_CAPTURE Intent Action as it offered more features
-                      than my custom capture session). This app sits on top of a SQLite database for data persistence. (Click on the image for more details).` ,
+                      than my custom capture session). This app sits on top of a SQLite database for data persistence.` ,
         tall_image: "FreezeTrack_Tall.PNG",
-        wide_image: "FreezeTrack_Wide.PNG"
+        wide_image: "FreezeTrack_Wide.PNG",
+        link: ""
     },
     {
         id: "menu-Ahem",
@@ -84,9 +89,22 @@ export const PROJECTS: Project[] = [
         description: `Ahem is a native Android application that I developed to get some experience with the Google Maps API and Android's more recent Room Database
                       Architecture for data flow between the database, the controller, and the view of the application. Anyone that worked with data persistence on Android
                       from the the middle of the 20-teen years knows that data persistence with SQLite used to have to be handled by interacting directly with the SQLite database via SQLiteOpenHelper.
-                      The Room Database Architecture simplifies this by acting as a layer on top of the SQLite. The entirety of this architecture is a little too much to discuss here (Click on the image for more details).` ,
+                      The Room Database Architecture simplifies this by acting as a layer on top of the SQLite. The entirety of this architecture is a little too much to discuss here.` ,
         tall_image: "Ahem_Tall.PNG",
-        wide_image: "Ahem_Wide.PNG"
+        wide_image: "Ahem_Wide.PNG",
+        link: ""
+    },
+    {
+        id: "menu-CppTutorials",
+        title: "C++ Tutorials",
+        description: `I started a C++ tutorial series on YouTube that I was doing to both help others and teach myself C++.
+                      I had to postpone videos due to getting busy with other projects, but it is something I hope to continue producing soon.
+                      C++, and its close equivalency Rust, are two of the primary languages I want to learn in the near future so that I can try my
+                      hand in game development.
+                      (Click the image for current playlist.)` ,
+        tall_image: "CPP_Tall.PNG",
+        wide_image: "CPP_Wide.PNG",
+        link: "https://www.youtube.com/watch?v=iO_bKJ4MvHY&list=PLC-Mtri4YuFDQlae_DvGtYkNN3tCSv3rO"
     },
     {
         id: "menu-Fit4Life-Fullstack",
@@ -94,9 +112,10 @@ export const PROJECTS: Project[] = [
         description: `Fit4Life is a fullstack application, hosted in AWS (I host the DNS server through NameCheap). The frontend React project is stored in an AWS S3 bucket that is served up via AWS CloudFront CDN. This front end 
                       application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server
                       (due to my inadvertent frugality), incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
-                      virtual web server. The API then makes CRUD requests to a MySQL server. (Click on the image for more details).` ,
+                      virtual web server. The API then makes CRUD requests to a MySQL server.` ,
         tall_image: "Fit4Life_Tall.PNG",
-        wide_image: "Fit4Life_Wide.PNG"
+        wide_image: "Fit4Life_Wide.PNG",
+        link: ""
     },
     {
         id: "menu-MidMichiganSeconds-Fullstack",
@@ -104,9 +123,21 @@ export const PROJECTS: Project[] = [
         description: `Mid-Michigan Seconds is a fullstack application, hosted in AWS (I host the DNS server through NameCheap). The frontend React project is stored in an AWS S3 bucket that is served up via AWS CloudFront CDN. This front end 
                       application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server
                       (due to my inadvertent frugality), incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
-                      virtual web server. The API then makes CRUD requests to a MySQL server. (Click on the image for more details).` ,
+                      virtual web server. The API then makes CRUD requests to a MySQL server.` ,
         tall_image: "MidMichiganSeconds_Tall.PNG",
-        wide_image: "MidMichiganSeconds_Wide.PNG"
+        wide_image: "MidMichiganSeconds_Wide.PNG",
+        link: ""
+    },
+    {
+        id: "menu-MachineLearning",
+        title: "CSCI 2020 Paper/Presentation",
+        description: `In the Summer of 2020, just after my capstone course and graduation, I was blessed with the opportunity to publish a paper which was accepted to present at 
+                      the 2020 Computational Science and Computational Intelligence (CSCI) Conference. Originally intending to attend the conference in Las Vegas in person, the 
+                      Covid-19 pandemic changed our plans and we moved to an online format. The research was on comparing a Decision Tree Model up against a Recurrent Long Short-Term Memory Neural Net
+                      in the problem space of trying to compute the localization/location of a users device indoors. (Click the image to view the presentation.)` ,
+        tall_image: "MachineLearning_Tall.PNG",
+        wide_image: "MachineLearning_Wide.PNG",
+        link: "https://youtu.be/Stnv9jgYx30"
     },
     {
         id: "menu-DowCoop",
@@ -119,7 +150,8 @@ export const PROJECTS: Project[] = [
                       local networks and configuring redundant backup systems for our computers.
                       ` ,
         tall_image: "Dow_Tall.PNG",
-        wide_image: "Dow_Wide.PNG"
+        wide_image: "Dow_Wide.PNG",
+        link: ""
     },
     {
         id: "menu-DowSoftwareDeveloper",
@@ -132,6 +164,7 @@ export const PROJECTS: Project[] = [
                       mobile applications for both Apple and Android Platforms (Apple Developer and Google Play consoles). I have also developed in PowerApps, PowerAutomate, and
                       SharePoint.` ,
         tall_image: "Dow_Tall.PNG",
-        wide_image: "Dow_Wide.PNG"
+        wide_image: "Dow_Wide.PNG",
+        link: ""
     },
 ];

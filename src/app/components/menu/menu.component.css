@@ -60,6 +60,7 @@ ul li a{
     width: 100%;
     cursor: pointer;
     border-left: 3px solid transparent;
+    transition-duration: 0.5s;
 }
 
 ul li a:hover{

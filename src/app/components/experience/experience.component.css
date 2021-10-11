@@ -1,0 +1,91 @@
+.experience-container{
+    height: auto;
+    width: 100%;
+}
+
+.experience-wrapper{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 42, 82, 0.7));
+}
+
+.experience-content{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'FD MD WD'
+    'CBD DA I';
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 2s;
+    opacity: 0;
+}
+
+.experience-card{
+    height: 500px;
+    width: 350px;
+    background: rgba(19, 19, 19, 1);
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px;
+    padding: 20px;
+    text-align: left;
+    transition-duration: 1s;
+}
+
+.experience-card:hover{
+    background: rgb(43, 43, 43);
+    box-shadow: 2px 2px 10px rgb(0, 187, 201);
+}
+
+.experience-card-line{
+    width: 70%;
+    height: 3px;
+    background: rgb(0, 187, 201);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-FullstackDevelopment{
+    grid-area: FD;
+}
+
+.experience-MobileDevelopment{
+    grid-area: MD;
+}
+
+.experience-WebDevelopment{
+    grid-area: WD;
+}
+
+.experience-CloudBased{
+    grid-area: CBD;
+}
+
+.experience-DesktopDevelopment{
+    grid-area: DA;
+}
+
+.experience-Interests{
+    grid-area: I;
+}
+
+.experience-card-title{
+    text-align: left;
+    margin: 0;
+    color: white;
+}
+
+.experience-card-description{
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+.showCard{
+    opacity: 1;
+}

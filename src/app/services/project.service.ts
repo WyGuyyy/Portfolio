@@ -13,7 +13,8 @@ export class ProjectService {
     title: "",
     description: "",
     tall_image: "",
-    wide_image: ""
+    wide_image: "",
+    link: ""
   };
 
   allProjects: Project[] = PROJECTS;

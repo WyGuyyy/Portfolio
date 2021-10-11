@@ -39,14 +39,19 @@ export class ProjectComponent implements OnInit, OnDestroy {
   title:string = "Select a Project";
   description:string = "Click on a project from the menu to be displayed!";
   imagePath:string = "url(../../assets/img/" + (window.innerWidth <= 800 ? "Default_Wide,jpg" : "Default_Tall.jpg") + ")";
+  link:string = "";
 
   project:Project = {
     id: "",
     title: "",
     description: "",
     tall_image: "",
-    wide_image: ""
+    wide_image: "",
+    link: ""
   };
+
+  private observer:IntersectionObserver | undefined;
+  aboutElement: Element | undefined;
 
   constructor(private cdr: ChangeDetectorRef, private projectService: ProjectService) { }
 
@@ -63,12 +68,39 @@ export class ProjectComponent implements OnInit, OnDestroy {
           }
 
         }
-      }))
+      }));
+
+      this.createObserver();
   }
 
   ngOnDestroy(){
     this.subscriptions.unsubscribe();
   }
+
+  handleIntersect(entries:IntersectionObserverEntry[], obsever:IntersectionObserver){
+    entries.forEach((entry) => {
+      if(entry.intersectionRatio > 0.1){
+        entry.target.classList.add("showProject");
+      }
+    });
+
+    this.observer?.unobserve(this.aboutElement as Element);
+  }
+
+  createObserver(){
+
+    let options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.4
+    };
+
+    this.aboutElement = document.getElementsByClassName("project-content")[0] as Element;
+
+    this.observer = new IntersectionObserver(this.handleIntersect, options);
+    this.observer.observe(this.aboutElement);
+  }
+
 
   showProject(){
     
@@ -84,8 +116,17 @@ export class ProjectComponent implements OnInit, OnDestroy {
     this.title = this.project.title;
     this.description = this.project.description;
     this.imagePath = "url(../../assets/img/" + imageName + ")";
+    this.link = this.project.link;
 
     this.state = "refresh2";
+
+  }
+
+  onImageClick(){
+
+      if(this.link !== ""){
+         window.open(this.link);
+      }
 
   }
 

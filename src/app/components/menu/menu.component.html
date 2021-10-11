@@ -3,7 +3,7 @@
         <ul>
             <li><a href="#welcome-container">Home</a></li>
             <li><a href="#about-container">About</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="../../../assets/file/WT_Resume_2020.docx" download="">Resume</a></li>
             <li><a id="menu-projects-button" (click)="onMenuItemClick('menu-projects-list')" href="#project-container">Projects
                 <span class="fa fa-caret-down menu-caret-down-first"></span>
             </a></li>
@@ -36,6 +36,12 @@
                             <li class="menu-Ahem" (click)="onMenuItemClick('menu-Ahem')"><a>Ahem</a></li>
                         </ul>
                     </li>
+                    <li><a (click)="onMenuItemClick('menu-Cpp-list')">C++</a></li>
+                    <li>
+                        <ul id="menu-Cpp-list">
+                            <li class="menu-CppTutorials" (click)="onMenuItemClick('menu-CppTutorials')"><a>C++ Tutorials</a></li>
+                        </ul>
+                    </li>
                     <li><a (click)="onMenuItemClick('menu-Fullstack-list')">Fullstack Projects</a></li>
                     <li>
                         <ul id="menu-Fullstack-list">
@@ -43,7 +49,13 @@
                             <li class="menu-MidMichiganSeconds-Fullstack" (click)="onMenuItemClick('menu-MidMichiganSeconds-Fullstack')"><a>MidMichiganSeconds</a></li>
                         </ul>
                     </li>
-                    <li><a (click)="onMenuItemClick('menu-Experience-list')">Experience</a></li>
+                    <li><a (click)="onMenuItemClick('menu-MachineLearning-list')">Machine Learning</a></li>
+                    <li>
+                        <ul id="menu-MachineLearning-list">
+                            <li class="menu-MachineLearning" (click)="onMenuItemClick('menu-MachineLearning')"><a>CSCI 2020</a></li>
+                        </ul>
+                    </li>
+                    <li><a (click)="onMenuItemClick('menu-Experience-list')">Industry Experience</a></li>
                     <li>
                         <ul id="menu-Experience-list">
                             <li class="menu-DowCoop" (click)="onMenuItemClick('menu-DowCoop')"><a>Dow - Coop</a></li>

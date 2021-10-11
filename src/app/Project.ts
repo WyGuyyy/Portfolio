@@ -3,5 +3,6 @@ export interface Project{
     title: string,
     description: string,
     tall_image: string,
-    wide_image: string
+    wide_image: string,
+    link: string
 }

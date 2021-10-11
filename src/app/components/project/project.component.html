@@ -1,15 +1,17 @@
 <div class="project-container" id="project-container">
     <div class="project-wrapper">
-        <div class="project-title-area">
-            <h2 class="project-title">Projects</h2>
-        </div>
-        <div class="project-display-area">
-            <div class="project-display-image-wrapper" [@hideProject]='state' [@showProject]='state' (@hideProject.done)="showProject()">
-                <div id="project-display-image" class="project-display-image" [ngStyle]="{'background':imagePath}"></div>
+        <div class="project-content">
+            <div class="project-title-area">
+                <h2 class="project-title">Projects</h2>
             </div>
-            <div class="project-display-description-wrapper" [@hideProject]='state' [@showProject]='state'>
-                <h1 id="project-display-description-title" class="project-display-description-title">{{title}}</h1>
-                <h2 id="project-display-description" class="project-display-description">{{description}}</h2>
+            <div class="project-display-area">
+                <div class="project-display-image-wrapper" (click)="onImageClick()" [@hideProject]='state' [@showProject]='state' (@hideProject.done)="showProject()">
+                    <div id="project-display-image" class="project-display-image" [ngStyle]="{'background':imagePath}"></div>
+                </div>
+                <div class="project-display-description-wrapper" [@hideProject]='state' [@showProject]='state'>
+                    <h1 id="project-display-description-title" class="project-display-description-title">{{title}}</h1>
+                    <h2 id="project-display-description" class="project-display-description">{{description}}</h2>
+                </div>
             </div>
         </div>
     </div>
