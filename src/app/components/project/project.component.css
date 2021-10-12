@@ -154,15 +154,23 @@
 
     .project-display-image-wrapper{
         width: 85%;
-        height: 350px;
+        height: 450px;
         margin-right: 0;
         margin-bottom: 30px;
     }
     
     .project-display-description-wrapper{
         width: 85%;
-        height: 350px;
+        height: 450px;
         margin-bottom: 10px;
+    }
+
+    .project-display-description{
+        color: white;
+        margin-left: 10px;
+        font-size: 14px;
+        text-align: start;
+        line-height: 1.5;
     }
 }
 

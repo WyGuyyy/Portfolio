@@ -34,10 +34,10 @@ export class ExperienceComponent implements OnInit {
     let options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.4
+      threshold: 0.1
     };
-
-    this.element = document.getElementsByClassName("experience-content")[0] as Element;
+    console.log(window.innerHeight);
+    this.element = document.getElementsByClassName("experience-all-content")[0] as Element;
 
     this.observer = new IntersectionObserver(this.handleIntersect, options);
 

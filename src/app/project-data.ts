@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     },
     {
         id: "menu-MidMichiganSeconds-Fullstack",
-        title: "MidMichiganSeconds (Fullstack Architecture)",
+        title: "Mid-Michigan Seconds (Fullstack Architecture)",
         description: `Mid-Michigan Seconds is a fullstack application, hosted in AWS (I host the DNS server through NameCheap). The frontend React project is stored in an AWS S3 bucket that is served up via AWS CloudFront CDN. This front end 
                       application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server
                       (due to my inadvertent frugality), incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy

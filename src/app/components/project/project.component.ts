@@ -92,7 +92,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
     let options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.4
+      threshold: 0.1
     };
 
     this.aboutElement = document.getElementsByClassName("project-content")[0] as Element;
@@ -111,7 +111,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
     /*var description = document.getElementById("project-display-description");
     var image = document.getElementById("project-display-image");*/
 
-    var imageName = (window.innerWidth <= 800 ? this.project.wide_image : this.project.tall_image);
+    var imageName = (window.innerWidth <= 800 && window.innerWidth >= 425 ? this.project.wide_image : this.project.tall_image);
 
     this.title = this.project.title;
     this.description = this.project.description;

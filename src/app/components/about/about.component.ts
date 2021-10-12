@@ -45,7 +45,7 @@ export class AboutComponent implements OnInit {
     let options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.4
+      threshold: 0.1
     };
 
     this.aboutElement = document.getElementsByClassName("about-content-wrapper")[0] as Element;
