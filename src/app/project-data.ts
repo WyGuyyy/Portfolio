@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
                       (more on the architecture under FullStack section in the menu).` ,
         tall_image: "Fit4Life_Tall.PNG",
         wide_image: "Fit4Life_Wide.PNG",
-        link: ""
+        link: "https://youtu.be/Y3tnPkKfVkg"
     },
     {
         id: "menu-MidMichiganSeconds",

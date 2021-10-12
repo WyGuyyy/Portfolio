@@ -89,3 +89,43 @@
 .showCard{
     opacity: 1;
 }
+
+@media(max-width: 1340px){
+    .experience-content{
+        grid-template-areas: 
+        'FD MD'
+        'WD CBD'
+        'DA I';
+    }
+}
+
+@media(max-width: 880px){
+    .experience-content{
+        grid-template-areas: 
+        'FD'
+        'MD'
+        'WD'
+        'CBD'
+        'DA'
+        'I';
+    }
+}
+
+@media(max-width: 425px){
+
+    .experience-card{
+        height: 400px;
+        width: auto;
+        align-items: center;
+    }
+
+    .experience-card-title{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .experience-card-description{
+        font-size: 15px;
+        text-align: center;
+    }
+}
