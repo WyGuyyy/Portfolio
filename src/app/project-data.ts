@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
                       goals, workouts, metrics, grades, and more. The app is written in React with 
                       Node.js. It uses a Java SpringBoot API to make requests to a backend MySQL server.
                       This is a fullstack application with a complete account/login system for security 
-                      (more on the architecture under FullStack section in the menu).` ,
+                      (Click on the image for a video Demo).` ,
         tall_image: "Fit4Life_Tall.PNG",
         wide_image: "Fit4Life_Wide.PNG",
         link: "https://youtu.be/Y3tnPkKfVkg"
@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
                       on a carousel slideshow on the site. The app is written in React with Node.js and uses
                       some third party libaries like PayPals billing and payment APIs to handle transactions
                       when customers purchase seconds of the day. The app uses a Java Spring API to send requests
-                      to a backend MySQL server. This is a fullstack application (more on the architecture under FullStack section in the menu).` ,
+                      to a backend MySQL server. This is a fullstack application (Click on the image for a video Demo).` ,
         tall_image: "MidMichiganSeconds_Tall.PNG",
         wide_image: "MidMichiganSeconds_Wide.PNG",
         link: "https://youtu.be/j94QXj6LU9E"
