@@ -37,7 +37,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
   state:string = "";
 
   title:string = "Select a Project";
-  description:string = "Click on a project from the menu to be displayed!";
+  description:string = "Click on a project from the hamburger menu to be displayed!";
   imagePath:string = "url(../../assets/img/" + (window.innerWidth <= 800 ? "Default_Wide,jpg" : "Default_Tall.jpg") + ")";
   link:string = "";
 

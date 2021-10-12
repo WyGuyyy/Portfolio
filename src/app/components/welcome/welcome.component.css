@@ -21,13 +21,17 @@
 
 .welcome-avi-pane{
     height: 100%;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.7);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
 }
 
-.welcome-avi-pane::-webkit-scrollbar {
+/*.welcome-avi-pane::-webkit-scrollbar {
     width: 5px;
     background-color: rgba(0,0,0,0.7);
     border-radius: 10px;
@@ -36,21 +40,21 @@
   .welcome-avi-pane::-webkit-scrollbar-thumb{
     background-color: rgba(0, 102, 109, 0.7);
     border-radius: 10px;
-}
+}*/
   
-.welcome-avi-pane::-webkit-scrollbar-track {
-    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+/*.welcome-avi-pane::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
     background-color: rgba(0,0,0,0.7);
     border-radius: 10px;
-}
+}*/
 
 .welcome-avi-pane-content{
-    height: auto;
-    width: 90%;
-    position: relative;
+    height: 100%;
+    width: 80%;
+    /*position: relative;
     top: 25%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,14 +175,23 @@
 }
 
 @media(max-width: 650px){
+
+}
+
+@media(max-width: 500px){
+    .welcome-avi{
+        height: 130px;
+        width: 130px;
+    }
+}
+
+@media(max-width: 320px){
+
     .welcome-social-media-wrapper{
-        width: 100%;
-        height: auto;
         display: grid;
-        grid-template: 
-        'li tw'
-        'bb yt'
-        'ig fb';
+        grid-template-areas: 
+        'li tw bb'
+        'yt ig fb';
         justify-content: center;
         align-items: center;
     }
@@ -206,11 +219,15 @@
     .welcome-facebook{
         grid-area: fb;
     }
-}
 
-@media(max-width: 500px){
     .welcome-avi{
         height: 130px;
         width: 130px;
+    }
+}
+
+@media(max-height: 320px){
+    .welcome-container{
+        height: auto;
     }
 }
