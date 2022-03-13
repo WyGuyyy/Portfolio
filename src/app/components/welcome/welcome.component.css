@@ -100,33 +100,33 @@
 }
 
 .welcome-social-media-wrapper a:nth-child(1){
-    color: #2867B2;
+    color: #bd2c00;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 .welcome-social-media-wrapper a:nth-child(1):hover{
-    color: #368efa;
+    color: #ec3700;
 }
 
 .welcome-social-media-wrapper a:nth-child(2){
-    color: #1DA1F2;
+    color: #2867B2;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 .welcome-social-media-wrapper a:nth-child(2):hover{
-    color: #55b3ee;
+    color: #368efa;
 }
 
 .welcome-social-media-wrapper a:nth-child(3){
-    color: #2684FF;
+    color: #1DA1F2;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 .welcome-social-media-wrapper a:nth-child(3):hover{
-    color: #68aaff;
+    color: #55b3ee;
 }
 
 .welcome-social-media-wrapper a:nth-child(4){
@@ -190,7 +190,7 @@
     .welcome-social-media-wrapper{
         display: grid;
         grid-template-areas: 
-        'li tw bb'
+        'gh li tw'
         'yt ig fb';
         justify-content: center;
         align-items: center;
@@ -205,7 +205,7 @@
     }
 
     .welcome-bitbucket{
-        grid-area: bb;
+        grid-area: gh;
     }
 
     .welcome-youtube{

@@ -167,4 +167,26 @@ export const PROJECTS: Project[] = [
         wide_image: "Dow_Wide.PNG",
         link: ""
     },
+    {
+        id: "menu-DowSoftwareDeveloper2",
+        title: "Dow (Software Developer II)",
+        description: `After about 18 months of working in the SAP Cloud space building webapps, I rotated to a new team working with a new technology stack.
+                      Although I cannot talk specifics about projects I worked on due to confidentiality reasons, in this position I have gained great experience
+                      on an Agile development team using a technology stack including AngularJS, C#.Net, MySQL, Azure cloud services including Events, Service Bus,
+                      deployment and validation pipelines, and more - not to mention having the opportunity to have my code reviewed my some brilliant lead software
+                      developers on this team. This position has really helped me grow tremendously as a developer.` ,
+        tall_image: "Dow_Tall.PNG",
+        wide_image: "Dow_Wide.PNG",
+        link: ""
+    },
+    {
+        id: "menu-CooksPaintingCo",
+        title: "Cooks Painting Co",
+        description: `This project was a website I created for a local entrepreneur. The site includes information about the company and its services,
+                      a testimonial carousel, a rotating gallery, and a form to send requests for a projects via email. The email is routed through EmailJS
+                      to a business email. This site is also integrated with google analytics so that the owners can track traffic on the site.` ,
+        tall_image: "Cooks_Tall.PNG",
+        wide_image: "Cooks_Wide.PNG",
+        link: "https://cookspaintingco.com/home"
+    }
 ];
