@@ -15,9 +15,10 @@ export class AboutComponent implements OnInit {
                    + " with the utmost quality, reliability, sustainability, and maximal user enjoyment, and to continue pushing the bounds of innovation.\n\n"
                    + "I always imagined myself being in a position someday where I could have a positive impact on as many people as possible."
                    + " Being a software engineer is my gateway to that reality."
-                   + " I want to contribute in any way I possibly can to innovation and advancement of the human race. I have worked on many applications, both personal and for a large"
-                   + " group of users in industry. These projects include web apps, mobile apps, console applications, embedded systems, game development, machine learning models (including a written and published paper),"
-                   + " database design and development, and API and microservice development."
+                   + " I want to contribute in any way I possibly can to innovation and advancement of the human race. I have worked on several different development teams"
+                   + " across a variety of tech stacks. I have a track record of building positive relations with my teammates, partners, and clients, and delivering on solutions"
+                   + " and tasks that are assigned to me. I approach every problem with a can-do attitude and look forward to being put in technically challenging situations and problem spaces."
+                   + " Everyday, I aim to be an extremely reliable problem solver and team player. I am always looking to optimize solutions while maximizing user enjoyment."
 
   private observer:IntersectionObserver | undefined;
   aboutElement: Element | undefined;

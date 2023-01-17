@@ -4,10 +4,9 @@ export const PROJECTS: Project[] = [
     {
         id: "menu-Fit4Life",
         title: "Fit4Life",
-        description: `Fit4Life is an webapp I developed for my sister-in-law's high school. It is a 
-                      fitness app used by the PE program to help students and teachers track fitenss
-                      goals, workouts, metrics, grades, and more. The app is written in React with 
-                      Node.js. It uses a Java SpringBoot API to make requests to a backend MySQL server.
+        description: `Fit4Life is an webapp I developed for a high school PE program to help students
+                      and teachers track fitness goals, workouts, metrics, grades, and more The frontend is written
+                      in ReactJS and uses a Java SpringBoot API to make requests to a backend MySQL server.
                       This is a fullstack application with a complete account/login system for security 
                       (Click on the image for a video Demo).` ,
         tall_image: "Fit4Life_Tall.PNG",
@@ -21,7 +20,7 @@ export const PROJECTS: Project[] = [
                       came up with the idea to sell \"virtual real estate\" by allowing companies,
                       artists, photographers, freelancers, etc. to buy seconds of the day with which they 
                       could display something like a company logo or image to advertise that would appear
-                      on a carousel slideshow on the site. The app is written in React with Node.js and uses
+                      on a carousel slideshow on the site. The frontend is written in ReactJS and uses
                       some third party libaries like PayPals billing and payment APIs to handle transactions
                       when customers purchase seconds of the day. The app uses a Java Spring API to send requests
                       to a backend MySQL server. This is a fullstack application (Click on the image for a video Demo).` ,
@@ -32,13 +31,9 @@ export const PROJECTS: Project[] = [
     {
         id: "menu-PortfolioSite",
         title: "Portfolio Site",
-        description: `After gaining some experience with React, I wanted to jump in and try Vue and Angular.
-                      I had been wanting to build a portfolio site for quite some time, and thought what better way
-                      to get experience with a new framework then to build a simple single page webapp for my portfolio.
-                      I took a crash course in both Vue and Angular, and ultimately decided to build it with Angular. The learning curve
-                      probably would have been alot less steep with Vue, but Angular seemed like such a complete Framework with so many
-                      libraries to explore, so I decided to dive into Angular. This site does not connect to a backend, but connects to a mock
-                      observable service that stores all of my project data.` ,
+        description: `The portfolio site you are currently viewing is a single page AngularJS web app. For cost reasons, the application does not
+                     make any calls to an API or backend datastore, but instead uses a mock service on the frontend to load data for the project
+                     descriptions and images stored as JSON and internal assets.` ,
         tall_image: "Portfolio_Tall.PNG",
         wide_image: "Portfolio_Wide.PNG",
         link: ""
@@ -50,8 +45,8 @@ export const PROJECTS: Project[] = [
                       and the backend MySQL server. In my college capstone course, we used
                       Java Springboot for the service layer of our project. During that project, I was assigned
                       to specific facets of the system, but I wanted to take that a step further and be in total
-                      control of the whole thing - every part of the system down to the authentication package. So
-                      I did just that and wrote an entire API service with over 13 different interfaces interacting with
+                      control of the whole thing - every part of the system down to authentication. So
+                      I did just that and wrote an entire API service with over 13 different contollers interacting with
                       a MySQL database, and wrote a basic autentication system using the Spring framework.` ,
         tall_image: "Default_Tall.jpg",
         wide_image: "Default_Wide.jpg",
@@ -89,7 +84,7 @@ export const PROJECTS: Project[] = [
         description: `Ahem is a native Android application that I developed to get some experience with the Google Maps API and Android's more recent Room Database
                       Architecture for data flow between the database, the controller, and the view of the application. Anyone that worked with data persistence on Android
                       from the the middle of the 20-teen years knows that data persistence with SQLite used to have to be handled by interacting directly with the SQLite database via SQLiteOpenHelper.
-                      The Room Database Architecture simplifies this by acting as a layer on top of the SQLite. The entirety of this architecture is a little too much to discuss here.` ,
+                      The Room Database Architecture simplifies this by acting as a layer on top of the SQLite.` ,
         tall_image: "Ahem_Tall.PNG",
         wide_image: "Ahem_Wide.PNG",
         link: ""
@@ -99,8 +94,7 @@ export const PROJECTS: Project[] = [
         title: "C++ Tutorials",
         description: `I started a C++ tutorial series on YouTube that I was doing to both help others and teach myself C++.
                       I had to postpone videos due to getting busy with other projects, but it is something I hope to continue producing soon.
-                      C++, and its close equivalency Rust, are two of the primary languages I want to learn in the near future so that I can try my
-                      hand in game development.
+                      My end goal behind learning C++ was to jump into game development with Unreal Engine.
                       (Click the image for current playlist.)` ,
         tall_image: "CPP_Tall.PNG",
         wide_image: "CPP_Wide.PNG",
@@ -110,9 +104,9 @@ export const PROJECTS: Project[] = [
         id: "menu-Fit4Life-Fullstack",
         title: "Fit4Life (Fullstack Architecture)",
         description: `Fit4Life is a fullstack application, hosted in AWS (I host the DNS server through NameCheap). The frontend React project is stored in an AWS S3 bucket that is served up via AWS CloudFront CDN. This front end 
-                      application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server
-                      (due to my inadvertent frugality), incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
-                      virtual web server. The API then makes CRUD requests to a MySQL server.` ,
+                      application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server, 
+                      incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
+                      virtual web server. The API then makes requests to a MySQL server.` ,
         tall_image: "Fit4Life_Tall.PNG",
         wide_image: "Fit4Life_Wide.PNG",
         link: ""
@@ -121,9 +115,9 @@ export const PROJECTS: Project[] = [
         id: "menu-MidMichiganSeconds-Fullstack",
         title: "Mid-Michigan Seconds (Fullstack Architecture)",
         description: `Mid-Michigan Seconds is a fullstack application, hosted in AWS (I host the DNS server through NameCheap). The frontend React project is stored in an AWS S3 bucket that is served up via AWS CloudFront CDN. This front end 
-                      application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server
-                      (due to my inadvertent frugality), incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
-                      virtual web server. The API then makes CRUD requests to a MySQL server.` ,
+                      application makes requests to a Java Springboot API running on an EC2 server. As I have multiple apps running on the same server,
+                      incoming requests are actually picked up and forwarded to the intended application via an NGINX reverse proxy
+                      virtual web server. The API then makes requests to a MySQL server.` ,
         tall_image: "MidMichiganSeconds_Tall.PNG",
         wide_image: "MidMichiganSeconds_Wide.PNG",
         link: ""
@@ -142,12 +136,11 @@ export const PROJECTS: Project[] = [
     {
         id: "menu-DowCoop",
         title: "Dow (Coop)",
-        description: `Although I cannot talk specifics about projects I worked on during my Coop due to confidentiality reasons,
-                      I did get an opportunity to work in several very cool spaces. We primarily worked in Visual Studio developing
-                      VB.net applications for our immediate team. This was also my first exposure to Azure, which we used as our primary
-                      code repository when working on projects. I also worked on several productivity scripts using VBScript, as well as a brief 
-                      project working with Augmented Reality in the Unity Game Engine. Aside from coding, my Coop also gave me experience managing
-                      local networks and configuring redundant backup systems for our computers.
+        description: `In this position, I had the opportunity to work in several very cool spaces. The bulk of my work involved building desktop
+                      applications for Chemical Engineers to help reduce the time of data transfer, processing and entry from lab machines
+                      into on premise datastores. Via our desktop solutions, we were able to reduce the time Engineers spent on these items
+                      by over 60%. Other responsibilities include managing teams network and lab computers and deploying Acronis backup software
+                      to across our network to guarantee 100% data retention and restore on all lab computers.
                       ` ,
         tall_image: "Dow_Tall.PNG",
         wide_image: "Dow_Wide.PNG",
@@ -157,12 +150,11 @@ export const PROJECTS: Project[] = [
         id: "menu-DowSoftwareDeveloper",
         title: "Dow (Software Developer)",
         description: `After 2 1/2 years as a Coop at Dow, I started as a fulltime software developer. 
-                      Although I cannot talk specifics about projects I worked on due to confidentiality reasons,
-                      I have had the opportuntiy to work with a wide variety of technologies. I have worked in both SAP Cloud Platform
-                      and Azure, and have worked on multiple webapps in the SAPUI5 framework. I have had experience taking a project from 
-                      the requirements and design phase, all the way to development, testing, and production using Agile methodologies. I also gained experience building, signing and managing
-                      mobile applications for both Apple and Android Platforms (Apple Developer and Google Play consoles). I have also developed in PowerApps, PowerAutomate, and
-                      SharePoint.` ,
+                      In this position, I had the opportuntiy to work with a wide variety of technologies. The bulk of my work here was
+                      building web apps for various businesses across the company to enable paperless solutions for increased
+                      productivity. In some cases, productivity increased by as much as 50% by building HTTP communication pipelines
+                      between our webapps and on premise master data to automatically sync data between both systems. I also decommissioned
+                      and replaced old Java brokers, saving the company thousands of dollars in technical debt.` ,
         tall_image: "Dow_Tall.PNG",
         wide_image: "Dow_Wide.PNG",
         link: ""
@@ -170,11 +162,11 @@ export const PROJECTS: Project[] = [
     {
         id: "menu-DowSoftwareDeveloper2",
         title: "Dow (Software Developer II)",
-        description: `After about 18 months of working in the SAP Cloud space building webapps, I rotated to a new team working with a new technology stack.
-                      Although I cannot talk specifics about projects I worked on due to confidentiality reasons, in this position I have gained great experience
-                      on an Agile development team using a technology stack including AngularJS, C#.Net, MySQL, Azure cloud services including Events, Service Bus,
-                      deployment and validation pipelines, and more - not to mention having the opportunity to have my code reviewed my some brilliant lead software
-                      developers on this team. This position has really helped me grow tremendously as a developer.` ,
+        description: `After 18 months in my first full time position, I rotated to a new team.
+                      I worked on a variety features for a large event driven progressive web app that replaced a legacy system saving the company
+                      thousands of dollars in technical debt. To name a few: I optimized our Azure Durable Functions and Service Bus Queues resulting in a 90% speedup of our
+                      asynchronous job processing for batch data. I also built out a failure attachment interface for our email notification system giving users and
+                      the development team much better visibility into our asynchrnous jobs with failure reports attached to emails sent from the application.`,
         tall_image: "Dow_Tall.PNG",
         wide_image: "Dow_Wide.PNG",
         link: ""
